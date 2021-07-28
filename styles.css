@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    font-size: 16px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+#hover-drop-menu{
+    border-style: none;
+    font-size: inherit;
+    padding: 16px 12px;
+    border-radius: 5px;
+    background-color: #dea5a4;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item{
+    width: 120px;
+    height: 50px;
+    font-size: inherit;
+    border-style: none;
+    text-decoration: none;
+    background-color: #3EB489;
+}
+
+.menu-item:hover{
+    background-color: #54f1b8;
+}
