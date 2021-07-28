@@ -20,3 +20,15 @@ button.addEventListener("mouseover", function(){
 menuItems.addEventListener("mouseleave", function(){
     menuItems.style.display = "none"
 })
+
+subMenuButton.addEventListener("mouseover", function(){
+    menu.style.display = "flex"
+})
+
+menu.addEventListener("mouseleave", function(){
+    menu.style.display = "none"
+})
+
+subMenu.addEventListener("mouseleave", function(){
+    menu.style.display = "none"
+})
