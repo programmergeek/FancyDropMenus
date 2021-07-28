@@ -8,11 +8,15 @@ body{
 }
 
 #hover-drop-menu{
+    width: 120px;
     border-style: none;
     font-size: inherit;
     padding: 16px 12px;
-    border-radius: 5px;
-    background-color: #dea5a4;
+    background-color: #f1f1f1;
+}
+
+#hover-drop-menu:hover{
+    background-color: #dadada;
 }
 
 .menu{
@@ -20,6 +24,28 @@ body{
     flex-direction: column;
     width: fit-content;
     position: absolute;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#hover-menu-items{
+    margin-top: 5px;
+    background-color: white;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+#first{
+    border-radius: 10px 10px 0px 0px;
+}
+
+#last{
+    border-radius: 0px 0px 10px 10px;
 }
 
 .menu-item{
@@ -28,9 +54,9 @@ body{
     font-size: inherit;
     border-style: none;
     text-decoration: none;
-    background-color: #3EB489;
+    background-color: #f1f1f1;
 }
 
 .menu-item:hover{
-    background-color: #54f1b8;
+    background-color: #dadada;
 }
