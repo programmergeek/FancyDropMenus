@@ -18,6 +18,8 @@ body{
 .menu{
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    position: absolute;
 }
 
 .menu-item{
