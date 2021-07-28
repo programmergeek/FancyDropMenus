@@ -6,6 +6,8 @@ const menuItems = document.getElementById("hover-menu-items")
 const subMenuButton = document.getElementById("hover-drop-submenu")
 const menu = document.getElementById("hover-menu-items-two")
 const subMenu = document.getElementById("hover-submenu-items")
+const openSubOne = document.getElementById("first-sub")
+const openSubTwo = document.getElementById("last-sub")
 
 //initial state
 menuItems.style.display = "none"
@@ -30,5 +32,20 @@ menu.addEventListener("mouseleave", function(){
 })
 
 subMenu.addEventListener("mouseleave", function(){
-    menu.style.display = "none"
+    subMenu.style.display = "none"
 })
+
+openSubOne.addEventListener("mouseover", function(){
+    openSubMenu(openSubOne)
+})
+
+openSubTwo.addEventListener("mouseover", function(){
+    openSubMenu(openSubTwo)
+})
+
+function openSubMenu(key){
+    subMenu.style.display = "flex"
+    subMenu.style.position = "absolute"
+    subMenu.style.left = `${key.getBoundingClientRect().x+120}px`
+    subMenu.style.top = `${key.getBoundingClientRect().y}px`
+}
